@@ -24,9 +24,9 @@ body{
     /* background: linear-gradient(#212517,#374709,#759242,#DED3A6,#F2F2EF); */
     /* background: linear-gradient(#217074,#37745B,#8B9D77,#E7EAEF,#EDC5AB); */
     /* background: linear-gradient(#100102,#4B1E19,#C0587E,#FC8B5E,#EA592A); */
-    background: linear-gradient(120deg,#469597 10%,#5BA199 50%,#DDBEAA 90%);
+    background: linear-gradient(120deg,#469597 50%,#5BA199 50%,#DDBEAA 70%);
     border-radius: 20px;
-    box-shadow: 1px 1px 5px 10px #217074;
+    box-shadow: 1px 1px 5px 5px #217074;
 }
 nav {
     display: flex;
@@ -98,7 +98,7 @@ nav ul li a:hover{
     background-color: rgb(21, 208, 173);
     font-size: 23px;
     color: black;
-    border-radius: 25px;
+    border-radius:0px 15px 0px 15px ;
     box-shadow:1px 1px 20px 5px lightseagreen;
 }
 .cv a:hover{
