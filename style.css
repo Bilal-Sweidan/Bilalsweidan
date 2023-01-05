@@ -14,11 +14,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .maindiv{
     width: 97%;
-    height: 95%;
+    height: 95vh;
     /* background:linear-gradient(#778D45,#344C11,#AEC09A,#AEC670) ;         */
     /* background: linear-gradient(#02315E,#00457E,#2F70AF,#B9848C,#806491); */
     /* background: linear-gradient(#212517,#374709,#759242,#DED3A6,#F2F2EF); */
@@ -34,7 +34,11 @@ nav {
     align-items: center;
     width: 90%;
     margin: auto;
-    padding: 6px 0px ;
+    padding: 6px 6px ;
+    border-top: none;
+    border: 0px solid #217074;
+    border-radius: 0px 0px 20px 20px;
+    background-color: #5BA199;
 }
 .logo{
     text-decoration:none;
@@ -106,12 +110,12 @@ nav ul li a:hover{
 }
 .img{
     width: 30%;
-    height: 100%;
+    height: 90%;
     margin-top: 70px; 
 }
 .img img{
     width: 100%;
-    height: 80%;
+    height: 90%;
     padding: 0px 0px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 5px white;
@@ -125,7 +129,7 @@ nav ul li a:hover{
 .comunication{
     margin-top: 50px;
     width: 100%;
-    height: 40%;
+    height: 20%;
 }
 .comunication img {
     width: 30px;
