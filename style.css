@@ -3,22 +3,26 @@
     src: url(DollieScript_PersonalUse.ttf);
 }
 *{
+    box-sizing: border-box;
+    font-family:Georgia, serif;
     padding: 0px;
     margin: 0px;
-    font-family:Georgia, serif;
 }
 body{
-    background: linear-gradient(-100deg,#217074 ,#8B9D77,#EDC5AB,#37745B);
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
+    height: 100%;
+    background-color: #217074;
 }
 .maindiv{
-    width: 97%;
-    height: 95vh;
+    position: absolute;
+    /* top: 20px;
+    left: 20px; */
+
+    /* width: 97%;
+    height: 95%; */
+    width: 100%;
+    height: 100%;
+    /* height: 95vh; */
     /* background:linear-gradient(#778D45,#344C11,#AEC09A,#AEC670) ;         */
     /* background: linear-gradient(#02315E,#00457E,#2F70AF,#B9848C,#806491); */
     /* background: linear-gradient(#212517,#374709,#759242,#DED3A6,#F2F2EF); */
@@ -30,20 +34,17 @@ body{
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 90%;
     margin: auto;
     padding: 6px 6px ;
     border-top: none;
-    border: 0px solid #217074;
-    border-radius: 0px 0px 20px 20px;
-    background-color: #5BA199;
 }
 .logo{
     text-decoration:none;
     font-size: 50px;
-    color: rgba(red, green, blue, alpha);
+    color: #f3b890;
     font-weight: 500;
     text-transform: uppercase;
     font-family: logfont;
@@ -70,29 +71,34 @@ nav ul li a:hover{
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    flex-wrap: wrap-reverse;
 }
 .text{
-    width: 43%;
+    width: 600px ;
     height: 50%;
     line-height: 50px;
 }
 .text h1{
     text-transform: uppercase;
     font-size: 40px;
-    color: purple;
+    color: #f3b890;
     font-family: serif;
+    animation: slideRight 2s ease both;
 }
 .text p{
+    width: 100%;
     line-height: 40px;
     font-size: 25px;
     text-transform: capitalize;
     color: black;
+    animation: slideRight 2s ease both;
+    animation-delay: .2s;
 }
 .text p span{
     color: blue;
 }
 .cv{
-   margin-top:30px ;
+    margin-top:30px ;
 }
 .cv a{
     text-decoration: none;
@@ -104,27 +110,31 @@ nav ul li a:hover{
     color: black;
     border-radius:0px 15px 0px 15px ;
     box-shadow:1px 1px 20px 5px lightseagreen;
+    animation: slideRight 2s ease both;
+    animation-delay: .4s;
 }
 .cv a:hover{
     background-color: rgba(34, 183, 155, 0.743);
 }
 .img{
+    min-width: 262px;
     width: 30%;
-    height: 90%;
-    margin-top: 70px; 
+    height: 80%;
 }
 .img img{
     width: 100%;
-    height: 90%;
+    height: 100%;
     padding: 0px 0px;
     border-radius: 10px;
     box-shadow: 1px 1px 20px 5px white;
     padding-top: 10px;
+    animation: slideRight 2s ease both;
+    animation-delay: 1s;
+    transition-duration: 1s;
 }
 .img img:hover{
-    transform: scale(1.1);
-    transition: 1s;
     box-shadow: 1px 1px 20px 5px lightseagreen;
+    transform: scale(1.1);
 }
 .comunication{
     margin-top: 50px;
@@ -135,8 +145,45 @@ nav ul li a:hover{
     width: 30px;
     height: 30px;
     margin: 0px 15px;
+    animation: slideRight 2s ease both;
+    animation-delay: 1s;
+    transition-duration: 1s;
 }
 .comunication img:hover{
     transform: scale(1.5);
-    transition: 1s;
+}
+@keyframes slideRight{
+    from{
+        margin-left: -200px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo{
+        text-align: center;
+    }
+    .container{
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+    }
+}
+@media (max-width: 981px) {
+    .logo{
+        text-align: center;
+    }
+    .container{
+        justify-content: center;
+    }
+    .text{
+        text-align: center;
+    }
+    .maindiv{
+        height: auto;
+    }
+    .img{
+        height: 50%;
+    }
 }
